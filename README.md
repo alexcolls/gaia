@@ -1,3 +1,5 @@
 # ga-ai
 
-GAIA AI speech-chat-bot
+EN: GAIA AI speech-chat-bot.
+
+SP: Chat IA con con voz.
