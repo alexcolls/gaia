@@ -1,2 +1,3 @@
-# gaia-ai
+# ga-ai
+
 GAIA-AI
