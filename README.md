@@ -1,3 +1,3 @@
 # ga-ai
 
-GAIA-AI
+GAIA AI speech-chat-bot
