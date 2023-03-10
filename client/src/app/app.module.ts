@@ -8,6 +8,8 @@ import { FooterBarComponent } from './components/footer-bar/footer-bar.component
 import { MessageAreaComponent } from './components/message-area/message-area.component';
 import { ChatAreaComponent } from './components/chat-area/chat-area.component';
 import { FormsModule } from '@angular/forms';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { FullCalendarComponent } from './full-calendar/full-calendar.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { FormsModule } from '@angular/forms';
     MainDisplayComponent,
     FooterBarComponent,
     MessageAreaComponent,
-    ChatAreaComponent
+    ChatAreaComponent,
+    FullCalendarComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
