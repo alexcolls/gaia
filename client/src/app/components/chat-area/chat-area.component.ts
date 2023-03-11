@@ -2,7 +2,6 @@ import { Component, ChangeDetectorRef } from '@angular/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import esLocale from '@fullcalendar/core/locales/es';
 import { INITIAL_EVENTS, createEventId } from './event-utils';
 import { CalendarOptions, DateSelectArg, EventClickArg, EventApi } from '@fullcalendar/core';
 import listPlugin from '@fullcalendar/list';
