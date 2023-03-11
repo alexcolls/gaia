@@ -18,7 +18,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     MainDisplayComponent,
     FooterBarComponent,
     MessageAreaComponent,
-    ChatAreaComponent,
+    ChatAreaComponent
   ],
   imports: [
     BrowserModule,
