@@ -9,6 +9,8 @@ import { MessageAreaComponent } from './components/message-area/message-area.com
 import { ChatAreaComponent } from './components/chat-area/chat-area.component';
 import { FormsModule } from '@angular/forms';
 
+import { FullCalendarModule } from '@fullcalendar/angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

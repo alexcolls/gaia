@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@fullcalendar/angular": "^6.1.4",
+    "@fullcalendar/core": "^6.1.4",
+    "@fullcalendar/daygrid": "^6.1.4",
+    "@fullcalendar/list": "^6.1.4",
+    "@fullcalendar/timegrid": "^6.1.4",
+    "install": "^0.13.0",
+    "primeng": "^15.2.0"
+  }
+}
