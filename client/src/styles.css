@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #f7730f;
-    --secondary-color: #e95302;
+    --primary-color: #f7730f !important;
+    --secondary-color: #e95302 !important;
     --dark-color: #121212;
     --dark-color2: #1F2937;
 }
@@ -46,9 +46,21 @@ html {
     src: url(./assets/fonts/KGSecondChancesSolid.ttf);
 }
 
+@font-face {
+    font-family: 'Greek';
+    src: url(./assets/fonts/Greek.ttf);
+}
+
+.symbol {
+    font-family: 'Greek';
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
 .logo {
     font-weight: normal;
     font-family: 'KGSketch', cursive;
+    font-size: 2.5rem;
 }
 
 .important {
@@ -88,9 +100,7 @@ html {
 }
 
 .headbutton {
-    background: linear-gradient(120deg,
-            var(--primary-color),
-            var(--secondary-color));
+    border: 1px solid white;
     color: white;
     opacity: 92%;
 }
@@ -105,4 +115,28 @@ button:hover {
 .fc h2 {
     color: var(--primary-color);
     font-size: 1.3rem !important;
+}
+
+.fc-prev-button {
+    background-color: var(--primary-color) !important;
+}
+
+.fc-next-button {
+    background-color: var(--secondary-color) !important;
+}
+
+.fc-today-button {
+    background-color: var(--primary-color) !important;
+}
+
+.fc-button-active {
+    background-color: var(--primary-color) !important;
+}
+
+.fc-listWeek-button {
+    background-color: var(--secondary-color) !important;
+}
+
+.fc-button {
+    border: 1px solid white !important;
 }
