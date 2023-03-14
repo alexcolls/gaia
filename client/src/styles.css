@@ -51,6 +51,11 @@ html {
     src: url(./assets/fonts/Greek.ttf);
 }
 
+@font-face {
+    font-family: 'Cubics';
+    src: url(./assets/fonts/cubic.ttf);
+}
+
 body {
     background: ;
 }
@@ -63,7 +68,7 @@ body {
 
 .logo {
     font-weight: normal;
-    font-family: 'KGSketch', cursive;
+    font-family: 'Cubics', cursive;
     font-size: 2.5rem;
 }
 
@@ -97,7 +102,10 @@ body {
 
 .content2 {
     background-color: var(--dark-color2);
+    opacity: 20%;
     border-color: var(--primary-color);
+    position: relative;
+    z-index: 1;
 }
 
 .subcontent {
