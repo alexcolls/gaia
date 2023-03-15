@@ -56,8 +56,11 @@ html {
     src: url(./assets/fonts/cubic.ttf);
 }
 
-body {
-    background: ;
+svg {
+
+    min-height: 100vh;
+    visibility: hidden;
+
 }
 
 .symbol {
@@ -94,6 +97,17 @@ body {
 
 .border-color {
     border: 1px solid var(--primary-color);
+}
+
+.header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ul li a p:hover {
+    background: linear-gradient(to top,
+            var(--primary-color),
+            transparent) !important;
+    border-bottom: 1px solid var(--primary-color) !important;
 }
 
 .content {

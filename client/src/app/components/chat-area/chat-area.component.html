@@ -1,33 +1,35 @@
-<div id="calendar" class="p-2 w-full h-full rounded-tl-xl rounded-bl-xl border">
-    <p
-        class="logo2 my-4 uppercase tracking-widest font-semibold text-transparent bg-clip-text bg-gradient-to-r important">
-        CALENDAR
-    </p>
-    <div class="h-5/6 w-full px-4 py-4 overflow-y-scroll shadow-inner rounded-xl">
-        <full-calendar *ngIf='calendarVisible' [options]='calendarOptions'>
-            <ng-template #eventContent let-arg>
-                <b>{{ arg.timeText }}</b>
-                <i>{{ arg.event.title }}</i>
-            </ng-template>
-        </full-calendar>
+<div class="container">
+    <div id="calendar" class="div2 p-2 w-full h-full rounded-tl-xl rounded-bl-xl border" [hidden]="currentDiv !== 2">
+        <p
+            class="logo2 my-4 uppercase tracking-widest font-semibold text-transparent bg-clip-text bg-gradient-to-r important">
+            CALENDAR
+        </p>
+        <div class="h-5/6 w-full px-4 py-4 overflow-y-scroll shadow-inner rounded-xl">
+            <full-calendar *ngIf='calendarVisible' [options]='calendarOptions'>
+                <ng-template #eventContent let-arg>
+                    <b>{{ arg.timeText }}</b>
+                    <i>{{ arg.event.title }}</i>
+                </ng-template>
+            </full-calendar>
+        </div>
     </div>
-</div>
-<div id="contacts" class="hidden">
-    <p
-        class="logo2 my-4 uppercase tracking-widest font-semibold text-transparent bg-clip-text bg-gradient-to-r important">
-        CONTACTS
-    </p>
-    <div class="h-5/6 w-full px-4 py-4 overflow-y-scroll shadow-inner rounded-xl">
+    <div id="contacts" class="div3" [hidden]="currentDiv !== 3">
+        <p
+            class="logo2 my-4 uppercase tracking-widest font-semibold text-transparent bg-clip-text bg-gradient-to-r important">
+            CONTACTS
+        </p>
+        <div class="h-5/6 w-full px-4 py-4 overflow-y-scroll shadow-inner rounded-xl">
 
 
+        </div>
     </div>
-</div>
-<div id="emails" class="hidden">
-    <p
-        class="logo2 my-4 uppercase tracking-widest font-semibold text-transparent bg-clip-text bg-gradient-to-r important">
-        EMAILS
-    </p>
-    <div class="h-5/6 w-full px-4 py-4 overflow-y-scroll shadow-inner rounded-xl">
+    <div id="emails" class="div4" [hidden]="currentDiv !== 4">
+        <p
+            class="logo2 my-4 uppercase tracking-widest font-semibold text-transparent bg-clip-text bg-gradient-to-r important">
+            EMAILS
+        </p>
+        <div class="h-5/6 w-full px-4 py-4 overflow-y-scroll shadow-inner rounded-xl">
 
+        </div>
     </div>
 </div>

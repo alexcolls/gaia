@@ -12,6 +12,10 @@ import { ChatAreaComponent } from './components/chat-area/chat-area.component';
 import { FormsModule } from '@angular/forms';
 
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { ErrorComponent } from './components/error/error.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { EmailsComponent } from './components/emails/emails.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     FooterBarComponent,
     MessageAreaComponent,
     ChatAreaComponent,
+    ErrorComponent,
+    CalendarComponent,
+    ContactsComponent,
+    EmailsComponent,
   ],
   imports: [
     BrowserModule,

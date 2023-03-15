@@ -1,10 +1,11 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectorRef, Input } from '@angular/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import { INITIAL_EVENTS, createEventId } from './event-utils';
 import { CalendarOptions, DateSelectArg, EventClickArg, EventApi } from '@fullcalendar/core';
 import listPlugin from '@fullcalendar/list';
+import { DivsService } from '../nav-bar/injection';
 
 @Component({
   selector: 'app-chat-area',
@@ -82,4 +83,7 @@ export class ChatAreaComponent {
     this.currentEvents = events;
     this.changeDetector.detectChanges();
   }
+
+
+
 }
