@@ -116,7 +116,6 @@ ul li a p:hover {
 
 .content2 {
     background-color: var(--dark-color2);
-    opacity: 20%;
     border-color: var(--primary-color);
     position: relative;
     z-index: 1;

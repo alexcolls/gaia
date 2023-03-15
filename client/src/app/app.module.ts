@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { ErrorComponent } from './components/error/error.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
-import { ContactsComponent } from './contacts/contacts.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 import { EmailsComponent } from './components/emails/emails.component';
 
 @NgModule({
