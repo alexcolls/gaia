@@ -4,3 +4,4 @@ key.py
 node_modules
 package-lock.json
 .vscode
+__pycache__
