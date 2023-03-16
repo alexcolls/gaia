@@ -16,6 +16,8 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { EmailsComponent } from './components/emails/emails.component';
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserPlatformLocation } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { GoogleLoginProvider } from 'angularx-social-login';
     BrowserModule,
     FormsModule,
     FullCalendarModule,
-    SocialLoginModule
+    SocialLoginModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {

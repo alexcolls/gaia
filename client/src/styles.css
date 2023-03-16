@@ -186,12 +186,27 @@ button:hover {
     border: 1px solid white !important;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-aspect-ratio: 16/9) {
+    .bg-video {
+        height: 100vw;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-aspect-ratio: 16/9) {
+    .bg-video {
+        width: 100vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
