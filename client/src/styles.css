@@ -210,3 +210,26 @@ button:hover {
         transform: translateX(-50%);
     }
 }
+
+.animacion {
+    animation: aparecer 1s forwards;
+    /* Define el tiempo de duración y dirección de la animación */
+    opacity: 0;
+    /* Define la opacidad inicial del elemento */
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        /* Define la opacidad inicial de la animación */
+        transform: translateY(-20px);
+        /* Define la posición inicial de la animación */
+    }
+
+    to {
+        opacity: 1;
+        /* Define la opacidad final de la animación */
+        transform: translateY(0);
+        /* Define la posición final de la animación */
+    }
+}

@@ -18,6 +18,7 @@ import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-logi
 import { GoogleLoginProvider } from 'angularx-social-login';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserPlatformLocation } from '@angular/common';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { BrowserPlatformLocation } from '@angular/common';
     CalendarComponent,
     ContactsComponent,
     EmailsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
