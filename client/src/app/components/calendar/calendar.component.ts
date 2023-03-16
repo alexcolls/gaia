@@ -12,6 +12,9 @@ import listPlugin from '@fullcalendar/list';
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent {
+  constructor(private changeDetector: ChangeDetectorRef) {
+  }
+
   calendarVisible = true;
   calendarOptions: CalendarOptions = {
     plugins: [
@@ -42,9 +45,6 @@ export class CalendarComponent {
     */
   };
   currentEvents: EventApi[] = [];
-
-  constructor(private changeDetector: ChangeDetectorRef) {
-  }
 
   handleCalendarToggle() {
     this.calendarVisible = !this.calendarVisible;

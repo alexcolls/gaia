@@ -16,6 +16,18 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+table {
+    width: 100%;
+}
+
+table.fc-col-header {
+    width: 100% !important;
+}
+
+div.fc-view-harness.fc-view-harness-active {
+    height: 300px !important;
+}
+
 ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
@@ -77,7 +89,7 @@ svg {
 
 .logo2 {
     font-weight: normal;
-    font-family: 'KGSketch', cursive;
+    font-family: 'Cubics', cursive;
     font-size: 2rem;
 }
 

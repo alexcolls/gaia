@@ -1,12 +1,11 @@
-<div class="container">
-    <div id="calendar" class="div2 p-2 w-full h-full rounded-tl-xl rounded-bl-xl border"
-        [hidden]="divsService.currentDiv !== 2">
+<div class="container h-full">
+    <div class="div2 p-2 w-full h-full rounded-tl-xl rounded-bl-xl border" [hidden]="divsService.currentDiv !== 2">
         <app-calendar />
     </div>
-    <div id="contacts" class="div3" [hidden]="divsService.currentDiv !== 3">
+    <div class="div3 p-2 w-full h-full rounded-tl-xl rounded-bl-xl border" [hidden]="divsService.currentDiv !== 3">
         <app-contacts />
     </div>
-    <div id="emails" class="div4" [hidden]="divsService.currentDiv !== 4">
+    <div class="div4 p-2 w-full h-full rounded-tl-xl rounded-bl-xl border" [hidden]="divsService.currentDiv !== 4">
         <app-emails />
     </div>
 </div>
