@@ -19,6 +19,7 @@ import { GoogleLoginProvider } from 'angularx-social-login';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserPlatformLocation } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HomeComponent } from './components/home/home.component';
     ContactsComponent,
     EmailsComponent,
     HomeComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
