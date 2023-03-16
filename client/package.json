@@ -24,6 +24,7 @@
     "@fullcalendar/interaction": "^6.1.4",
     "@fullcalendar/list": "^6.1.4",
     "@fullcalendar/timegrid": "^6.1.4",
+    "angularx-social-login": "^4.1.0",
     "install": "^0.13.0",
     "primeicons": "^6.0.1",
     "primeng": "^15.2.0",
