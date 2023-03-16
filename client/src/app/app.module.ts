@@ -8,7 +8,7 @@ import { FooterBarComponent } from './components/footer-bar/footer-bar.component
 import { MessageAreaComponent } from './components/message-area/message-area.component';
 import { ChatAreaComponent } from './components/chat-area/chat-area.component';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { ErrorComponent } from './components/error/error.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
@@ -19,7 +19,9 @@ import { GoogleLoginProvider } from 'angularx-social-login';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserPlatformLocation } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
-import { LoaderComponent } from './loader/loader.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { RouterOutlet } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { LoaderComponent } from './loader/loader.component';
     FormsModule,
     FullCalendarModule,
     SocialLoginModule,
+    RouterOutlet,
+    HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [
